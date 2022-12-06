@@ -15,7 +15,7 @@ import All_Classes.*;
 public class Email{
 
 
-//------------------------------------------ Function Email Address Checking----------------------------------------------
+//------------------------------------------ Function Email Address Checkings----------------------------------------------
 static void Clear()
 {
     System.out.print("\033[H\033[2J");  
