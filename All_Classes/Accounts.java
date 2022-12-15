@@ -1,11 +1,15 @@
 package All_Classes;
 import java.io.Serializable;
 
-public class Accounts implements Serializable{
+abstract class Information implements Serializable
+{
+    public String Email;
+}
+
+public class Accounts extends Information implements Serializable{
     public String First_Name;
     public String Last_Name;
     public String Phone_Number;
-    public String Email;
     public String Password;
 
     public Accounts(String First_Name, String Last_Name, String Phone_Number, String Email, String Password)

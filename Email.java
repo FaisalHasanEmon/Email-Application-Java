@@ -407,7 +407,7 @@ char page_selection = '~';
                                                     
                                                     System.out.println(i+" .Mail Code : "+cmp.Mail_ID);
                                                     System.out.println("   Date : "+cmp.Date);
-                                                    System.out.println("   From : "+cmp.From);
+                                                    System.out.println("   From : "+cmp.Email);
                                                     System.out.println("   To : "+cmp.To);
                                                     System.out.println("   Subject :"+cmp.Subject);
                                                     System.out.println("   Email : "+cmp.Compose);
@@ -439,7 +439,7 @@ char page_selection = '~';
                                                                 Boolean sentboxview = comp.SentboxView;
                                                                 
                                                                 String new_date = comp.Date;
-                                                                String newfrom = comp.From ;
+                                                                String newfrom = comp.Email ;
                                                                 String newto = comp.To;
                                                                 String newsubject =  comp.Subject;
                                                                 String newcompose = comp.Compose;
@@ -493,13 +493,13 @@ char page_selection = '~';
                                             while(compose_list.hasNext())
                                             {
                                                 ComposeEmail cmp = (ComposeEmail)compose_list.next();
-                                                if(user_email.equals(cmp.From)  && cmp.SentboxView==true) 
+                                                if(user_email.equals(cmp.Email)  && cmp.SentboxView==true) 
                                                 {
                                                     
                                                     
                                                     System.out.println(i+" .Mail Code : "+cmp.Mail_ID);
                                                     System.out.println("   Date : "+cmp.Date);
-                                                    System.out.println("   From : "+cmp.From);
+                                                    System.out.println("   From : "+cmp.Email);
                                                     System.out.println("   To : "+cmp.To);
                                                     System.out.println("   Subject :"+cmp.Subject);
                                                     System.out.println("   Email : "+cmp.Compose);
@@ -531,7 +531,7 @@ char page_selection = '~';
                                                                 Boolean sentboxview = false;
                                                                 
                                                                 String new_date = comp.Date;
-                                                                String newfrom = comp.From ;
+                                                                String newfrom = comp.Email ;
                                                                 String newto = comp.To;
                                                                 String newsubject =  comp.Subject;
                                                                 String newcompose = comp.Compose;

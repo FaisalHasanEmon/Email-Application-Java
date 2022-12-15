@@ -1,10 +1,9 @@
 package All_Classes;
 import java.io.*;
-public class ComposeEmail implements Serializable{
+public class ComposeEmail extends Information implements Serializable{
     
     public String Mail_ID;
     public String Date;
-    public String From;
     public String To;
     public String Subject;
     public String Compose;
@@ -16,7 +15,7 @@ public class ComposeEmail implements Serializable{
         this.SentboxView = SentboxView;
         this.Mail_ID = Mail_Id;
         this.Date = Date;
-        this.From = From;
+        this.Email = From;
         this.To = To;
         this.Subject = Subject;
         this.Compose = Compose;
